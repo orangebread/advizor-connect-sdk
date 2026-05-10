@@ -1,0 +1,70 @@
+{
+  "name": "@advizorconnect/sdk",
+  "version": "0.2.0",
+  "description": "Typed ESM SDK for Advizor Connect v1 integration, owner, and widget APIs",
+  "type": "module",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orangebread/advizor-connect-sdk.git"
+  },
+  "homepage": "https://github.com/orangebread/advizor-connect-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/orangebread/advizor-connect-sdk/issues"
+  },
+  "keywords": [
+    "advizor-connect",
+    "sdk",
+    "typescript",
+    "esm",
+    "integration-api",
+    "widget",
+    "owner-api"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./integration": {
+      "types": "./dist/integration.d.ts",
+      "import": "./dist/integration.js",
+      "default": "./dist/integration.js"
+    },
+    "./owner": {
+      "types": "./dist/owner.d.ts",
+      "import": "./dist/owner.js",
+      "default": "./dist/owner.js"
+    },
+    "./widget": {
+      "types": "./dist/widget.d.ts",
+      "import": "./dist/widget.js",
+      "default": "./dist/widget.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-generated-declarations.mjs",
+    "pack:dry-run": "npm pack --dry-run --json",
+    "pack:verify": "node scripts/verify-package-declarations.mjs",
+    "mirror:verify": "node scripts/verify-mirror-manifest.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  }
+}

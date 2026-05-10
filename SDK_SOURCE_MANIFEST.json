@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "packageName": "@advizorconnect/sdk",
+  "packageVersion": "0.2.0",
+  "source": {
+    "repository": "orangebread/advizor-connect",
+    "path": "server/sdk",
+    "commit": "20577fc350acaf41cc5ec77b0a775741c975c345",
+    "dirty": false,
+    "status": ""
+  },
+  "publicRepository": {
+    "name": "orangebread/advizor-connect-sdk",
+    "url": "git+https://github.com/orangebread/advizor-connect-sdk.git"
+  },
+  "files": [
+    {
+      "path": ".github/workflows/publish.yml",
+      "sha256": "a993f3d9e23fbf56d051799407c6802f6a23832c29b1fff33d160a8ff5def37f"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "5388647ee721e8055dbec75b81f93bf41a65b72acda71605033236d04e43f9f7"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "6fc494dcdd24453fd64012563b2dff864fc79eb48ad4b5c6b9cef2333bfcce17"
+    },
+    {
+      "path": "package.json",
+      "sha256": "d670fd2e63b839444c2ca7c61a6d50d46cf24bd186f9ee6fb2cc40a248ef5c23"
+    },
+    {
+      "path": "README.md",
+      "sha256": "fae2cf36643139daa8c4b0ea5e4e03f3e7c60d234069c2ec73eccdfdc8242709"
+    },
+    {
+      "path": "scripts/copy-generated-declarations.mjs",
+      "sha256": "18760d0748c9d945835d06687c4a95b57e02e3a56cc031af5ba0d164b69feb70"
+    },
+    {
+      "path": "scripts/verify-mirror-manifest.mjs",
+      "sha256": "452915dc7395b3da8c89811f1dbc7d27d3cc59e4029c4701b17ad92c12804175"
+    },
+    {
+      "path": "scripts/verify-package-declarations.mjs",
+      "sha256": "58ef5853eb6965fa5661a430c5ce34f4efa303e1c34fdc8dfbd835f4b41f4396"
+    },
+    {
+      "path": "src/client.ts",
+      "sha256": "9dc3a1152515a23026c2f5717f7d83749eeb45b20955503048408d58d96e0ac1"
+    },
+    {
+      "path": "src/core.ts",
+      "sha256": "f97a6daaf8ebe220ac5c2942a3c2e7c88a38f0d1372c3d2b609709cc2d565720"
+    },
+    {
+      "path": "src/errors.ts",
+      "sha256": "7394beeaac124bb90c31c571663a3d814c1dd15034b671cc6f67a006be70b292"
+    },
+    {
+      "path": "src/generated/v1.d.ts",
+      "sha256": "5f72e092d2589786fe563b299f250f41c17b50a5a0ef4520d4acf75a4a6d5b76"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "8240f664e14db675a3dd58d9ec0591e8ea04c1c9333ee01a1f96a3d1f9cb2566"
+    },
+    {
+      "path": "src/integration.ts",
+      "sha256": "2259d0a152a9f9717a31741867102c2cca27727bf3a8e1aa41f2074444772bcb"
+    },
+    {
+      "path": "src/operations.ts",
+      "sha256": "4ce5ecf445fc413c2c1962a542b0b96ac20d3ed39e12ed2050ed7157ce64af78"
+    },
+    {
+      "path": "src/owner.ts",
+      "sha256": "7785648f40d8b56966cc05a0e730c8471faff12b62b6a7c19f35fdc0bbabd6c6"
+    },
+    {
+      "path": "src/retry.ts",
+      "sha256": "b7ada741405c09ec190f95dcf982596766e2f95b4c3d59ca4beb32afe6610346"
+    },
+    {
+      "path": "src/runtime.ts",
+      "sha256": "a75d992cce9affac5f55f03fb52422ac227e6d8584dc6983e5911f988ca51976"
+    },
+    {
+      "path": "src/widget.ts",
+      "sha256": "19dc585ae160e79306d5dd42718bf3e24aefc44459240ac041b0a64ec47250f2"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "7b3adfaa3f7e277b0230e89e8cd55ed6093ed684a422d890741d9f0bfd1e6204"
+    }
+  ]
+}

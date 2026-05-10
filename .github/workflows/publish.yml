@@ -1,0 +1,60 @@
+name: Publish SDK
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+          package-manager-cache: false
+
+      - name: Ensure trusted publishing toolchain
+        shell: bash
+        run: |
+          npm install -g npm@^11.5.1
+          node -e "const [major, minor] = process.versions.node.split('.').map(Number); if (major < 22 || (major === 22 && minor < 14)) { throw new Error('Node >=22.14.0 is required for npm trusted publishing'); }"
+          node -e "const version = require('child_process').execFileSync('npm', ['--version'], { encoding: 'utf8' }).trim().split('.').map(Number); if (version[0] < 11 || (version[0] === 11 && version[1] < 5) || (version[0] === 11 && version[1] === 5 && version[2] < 1)) { throw new Error('npm >=11.5.1 is required for npm trusted publishing'); }"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build SDK
+        run: npm run build
+
+      - name: Verify package declarations
+        run: npm run pack:verify
+
+      - name: Verify mirror manifest
+        run: npm run mirror:verify
+
+      - name: Inspect packed package
+        run: npm pack --dry-run --json
+
+      - name: Clean install smoke
+        shell: bash
+        run: |
+          tmpdir="$(mktemp -d)"
+          npm pack --pack-destination "$tmpdir"
+          cd "$tmpdir"
+          npm init -y >/dev/null
+          npm install ./*.tgz --ignore-scripts
+          node --input-type=module -e "const root = await import('@advizorconnect/sdk'); const integration = await import('@advizorconnect/sdk/integration'); const owner = await import('@advizorconnect/sdk/owner'); const widget = await import('@advizorconnect/sdk/widget'); if (!root.createV1Client || !integration.createIntegrationClient || !owner.createOwnerClient || !widget.createWidgetClient) throw new Error('SDK export smoke failed');"
+
+      - name: Publish to npm
+        run: npm publish --access public
