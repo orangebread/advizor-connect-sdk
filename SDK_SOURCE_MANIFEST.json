@@ -5,7 +5,7 @@
   "source": {
     "repository": "orangebread/advizor-connect",
     "path": "server/sdk",
-    "commit": "b4e83e9eb60f4d686bc70c6a764284d9cd005b9a",
+    "commit": "131a3f74e54c065676301f25169bb47cbe70cb2b",
     "dirty": false,
     "status": ""
   },
@@ -16,7 +16,11 @@
   "files": [
     {
       "path": ".github/workflows/publish.yml",
-      "sha256": "08f68b7e8f7897e01f0eec6dcaaa561b4d8882db61237150edbb33cf355f1532"
+      "sha256": "d5594ca4bc49c449b1bd0e5ce4d12fa1d8b95eb33b8e4dab3361378a8df7f1ec"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "36d1c57a55ba4344c991647372c679f419e90f0f2dccaac8ba5da459a306adae"
     },
     {
       "path": "CHANGELOG.md",
