@@ -1,6 +1,6 @@
 # @advizorconnect/sdk
 
-Typed ESM TypeScript SDK for Advizor Connect v1 APIs. Version `0.2.0` prepares the package contract for public consumption by separating credential-specific clients and keeping group API keys out of browser runtimes by default.
+Typed ESM TypeScript SDK for Advizor Connect v1 APIs. The package separates credential-specific clients and keeps group API keys out of browser runtimes by default.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Install the current public release:
 npm install @advizorconnect/sdk
 ```
 
-Public npm `latest` is `0.2.0`. The previous `0.1.0` package remains visible until npm deprecation permissions are resolved.
+The previous `0.1.0` package remains visible until npm deprecation permissions are resolved.
 
 ## Requirements
 

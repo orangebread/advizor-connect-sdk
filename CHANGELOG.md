@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.2 — 2026-05-11
+
+Patch release to remove exact-version install-state wording from the npm
+registry README. No SDK runtime, type, or API surface changes were made.
+
+### Changed
+
+- Reworded the package README intro and install note so future patch releases do
+  not leave stale `latest` version text on npm.
+
 ## 0.2.1 — 2026-05-11
 
 Patch release to correct the npm registry README after `0.2.0` was published.
