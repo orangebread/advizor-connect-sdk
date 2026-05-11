@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "packageName": "@advizorconnect/sdk",
-  "packageVersion": "0.2.0",
+  "packageVersion": "0.2.1",
   "source": {
     "repository": "orangebread/advizor-connect",
     "path": "server/sdk",
-    "commit": "131a3f74e54c065676301f25169bb47cbe70cb2b",
+    "commit": "7086b16e86e14feba7b7134c939291e92ce4c89d",
     "dirty": false,
     "status": ""
   },
@@ -24,19 +24,19 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "5388647ee721e8055dbec75b81f93bf41a65b72acda71605033236d04e43f9f7"
+      "sha256": "b38a03cbac1a08c124c92ff2c5756487bb08362064e366e6d0bd41d9110af51d"
     },
     {
       "path": "package-lock.json",
-      "sha256": "6fc494dcdd24453fd64012563b2dff864fc79eb48ad4b5c6b9cef2333bfcce17"
+      "sha256": "ffb409b212031d6ca95b470300bbc1ab104b173ef10eae60a531e269b985c338"
     },
     {
       "path": "package.json",
-      "sha256": "d670fd2e63b839444c2ca7c61a6d50d46cf24bd186f9ee6fb2cc40a248ef5c23"
+      "sha256": "72e71a41b412ab779e7ad7a3eb7291a27ce5640964dbce6c95ce8ce0f3a2bd7d"
     },
     {
       "path": "README.md",
-      "sha256": "fae2cf36643139daa8c4b0ea5e4e03f3e7c60d234069c2ec73eccdfdc8242709"
+      "sha256": "086810f42e96f3616866e988979483126de4d7f3cbc9ef8597b7782ba5298cee"
     },
     {
       "path": "scripts/copy-generated-declarations.mjs",

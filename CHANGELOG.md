@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.1 — 2026-05-11
+
+Patch release to correct the npm registry README after `0.2.0` was published.
+No SDK runtime, type, or API surface changes were made.
+
+### Changed
+
+- Updated installation wording so the package README reflects that public npm
+  `latest` is now `0.2.x`.
+
 ## 0.2.0 — Prepared 2026-05-09 (not yet published)
 
 Release preparation for the public SDK auth/runtime hardening package. This entry

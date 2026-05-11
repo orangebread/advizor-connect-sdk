@@ -4,13 +4,13 @@ Typed ESM TypeScript SDK for Advizor Connect v1 APIs. Version `0.2.0` prepares t
 
 ## Installation
 
-After `@advizorconnect/sdk@0.2.0` is published:
+Install the current public release:
 
 ```bash
 npm install @advizorconnect/sdk
 ```
 
-Until that publish happens, public npm `latest` remains `0.1.0`; repo-local validation uses the package source in `server/sdk` or the file-linked `examples/paimoney-sdk` dependency.
+Public npm `latest` is `0.2.0`. The previous `0.1.0` package remains visible until npm deprecation permissions are resolved.
 
 ## Requirements
 
